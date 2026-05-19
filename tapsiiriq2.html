@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tapşırıq 2</title>
+</head>
+<body>
+
+<input type="number" id="num1" placeholder="1-ci ədəd">
+<input type="number" id="num2" placeholder="2-ci ədəd">
+
+<button onclick="add()">+</button>
+<button onclick="subtract()">−</button>
+
+<p>Nəticə: <span id="result"></span></p>
+
+<script>
+function add() {
+    let a = Number(document.getElementById("num1").value);
+    let b = Number(document.getElementById("num2").value);
+    document.getElementById("result").innerText = a + b;
+}
+
+function subtract() {
+    let a = Number(document.getElementById("num1").value);
+    let b = Number(document.getElementById("num2").value);
+    document.getElementById("result").innerText = a - b;
+}
+</script>
+
+</body>
+</html>
