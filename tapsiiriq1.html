@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tapşırıq 1</title>
+</head>
+<body>
+
+<input type="text" id="textInput" placeholder="Mətni yaz">
+<button onclick="showText()">Göstər</button>
+
+<p id="result"></p>
+
+<script>
+function showText() {
+    let text = document.getElementById("textInput").value;
+    document.getElementById("result").innerText = text;
+}
+</script>
+
+</body>
+</html>
